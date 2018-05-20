@@ -19,7 +19,9 @@ def palindrome():
 
 
 def table_multiply():
-    pass
+    number=int(raw_input("Ingrese un numero para mostrar tabla: "))
+    for i in range(1,11):
+        print("{} * {} = {}".format(number,i,(i*number)))
 
 
 
@@ -34,3 +36,7 @@ if __name__=='__main__':
         triangle()
     elif option==2:
         palindrome()
+    elif option==3:
+        table_multiply()
+    else:
+        print("Error no hay mas opciones")
