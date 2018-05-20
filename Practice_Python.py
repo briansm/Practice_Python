@@ -6,7 +6,17 @@ def triangle():
 
 
 def palindrome():
-    pass
+    word=str(raw_input("Ingrese Palabra: "))
+    reversed_letters=[]
+    for letter in word:
+        reversed_letters.insert(0,letter)
+    reversed_word=''.join(reversed_letters)
+    if(reversed_word==word):
+        print("{} es Palindroma".format(word))
+    else:
+        print("{} No es Palindroma".format(word))
+
+
 
 def table_multiply():
     pass
@@ -22,3 +32,5 @@ if __name__=='__main__':
 
     if option==1:
         triangle()
+    elif option==2:
+        palindrome()
